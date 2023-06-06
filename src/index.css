@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #121213;
+}
+
+.keyboard-container {
+  @apply flex flex-col items-center;
+}
+
+.keyboard-row {
+  @apply flex flex-row;
+}
+
+.keybord-key {
+  @apply rounded-md h-14 m-1 bg-zinc-500 text-white font-bold text-lg flex justify-center items-center;
+}
